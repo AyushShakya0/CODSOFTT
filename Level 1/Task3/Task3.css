@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;  /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 2px solid #4f5d75;  /* Dark slate gray border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 360px;  /* Fixed width */
+    height: 480px; /* Fixed height */
+    background-color: #2c3e50;  /* Dark slate gray background */
+}
+
+.display, .result {
+    background-color: #34495e;  /* Darker slate gray */
+    color: #ecf0f1;  /* White text */
+    text-align: right;
+    padding: 20px;
+    font-size: 1.5em;  /* Adjust font size for better fit */
+    height: 80px;  /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.result {
+    font-size: 1.2em;  /* Adjust font size for result */
+    height: 60px;  /* Fixed height */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;  /* Space between buttons */
+    height: calc(100% - 140px);  /* Adjust height to fit the remaining space */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.btn {
+    padding: 15px;  /* Adjust padding to fit better */
+    font-size: 1.2em;  /* Adjust font size for buttons */
+    border: 1px solid #4f5d75;  /* Dark slate gray border */
+    cursor: pointer;
+    background-color: #95a5a6;  /* Light slate gray */
+    color: #ecf0f1;  /* White text */
+    transition: background-color 0.2s;
+    box-sizing: border-box; /* Include padding in button size calculation */
+}
+
+.btn:hover {
+    background-color: #7f8c8d;  /* Medium slate gray */
+}
